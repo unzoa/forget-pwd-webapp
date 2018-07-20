@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>忘记密码</title>
+	<link rel="stylesheet" type="text/css" href="css/forget-pwd.css">
+</head>
+<body>
+<div class="fp-container">
+	<div class="fp-input">
+		<div class="fp-input-group">
+			<span><img src="imgs/tel.png"></span><input type="tel" autocomplete="" name="tel" class="tel-num" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" maxlength="11" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)" placeholder="请输入手机号码">
+		</div>
+		<div class="fp-input-group">
+			<span><img src="imgs/authCode.png"></span><input type="text" class="sms-pwd" name="sms-pwd" placeholder="请输入短信验证码"><span class="resend">重发</span>
+		</div>
+		<div class="fp-input-group">
+			<span><img src="imgs/pwdOne.png"></span><input type="password" class="pwd-one" name="pwd-one" placeholder="请设置新的6-16位登录密码" maxlength="16" minlength="6"><span><img class="seePwd" src="imgs/seePwd.png"></span>
+		</div>
+		<div class="fp-input-group">
+			<span><img src="imgs/pwdTwo.png"></span><input type="password" class="pwd-two" name="pwd-two" placeholder="请确认新的6-16位登录密码" maxlength="16" minlength="6">
+		</div>
+	</div>
+	<div></div>
+	<div class="fp-btn-con">
+		<img src="imgs/btn-ensure.png" class="fp-submit">
+	</div>
+</div>
+<div id="alert-modal"></div>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/forget-pwd.js"></script>
+</body>
+</html>
